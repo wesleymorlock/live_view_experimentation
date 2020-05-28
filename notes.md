@@ -24,3 +24,9 @@ https://dev.to/joseph_lozano/setting-up-a-new-phoenix-1-5-project-with-phoenix-l
       * injecting test/live_view_coolness/todos_test.exs
       * injecting lib/live_view_coolness_web.ex
     ```
+
+### Debugging:
+- Needed to be on LV 0.13.0+
+- Had to pin cowboy to 2.7.0
+
+

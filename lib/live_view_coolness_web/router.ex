@@ -17,6 +17,13 @@ defmodule LiveViewCoolnessWeb.Router do
   scope "/", LiveViewCoolnessWeb do
     pipe_through :browser
 
+    live "/todos", TodoLive.Index, :index
+    live "/todos/new", TodoLive.Index, :new
+    live "/todos/:id/edit", TodoLive.Index, :edit
+
+    live "/todos/:id", TodoLive.Show, :show
+    live "/todos/:id/show/edit", TodoLive.Show, :edit
+
     live "/", PageLive, :index
   end
 
